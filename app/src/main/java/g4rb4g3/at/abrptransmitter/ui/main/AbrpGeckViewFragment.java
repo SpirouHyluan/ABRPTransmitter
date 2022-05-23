@@ -190,7 +190,7 @@ public class AbrpGeckViewFragment extends Fragment {
               final String finalName = name;
               new Handler().postDelayed(() -> {
                 Intent intent = new Intent();
-                if("XX.EUR.SOP.00.191209".equals(mLgeFirmwareVersion)) {
+                if("XX.EUR.SOP.00.191209".equals(mLgeFirmwareVersion)) { // modifier pour toute les version supérieures et tester
                   intent.setAction("com.hkmc.intent.action.ACTION_SHOW_MAP");
                 } else {
                   intent.setAction("com.hkmc.intent.action.ACTION_ROUTE_SEARCH");
